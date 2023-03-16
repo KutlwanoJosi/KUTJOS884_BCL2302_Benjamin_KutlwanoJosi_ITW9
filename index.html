@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <script src="https://kit.fontawesome.com/f5d14b3b52.js" crossorigin="anonymous"></script>
+    <title>Kutlwano Josi's Resumé</title>
+  </head>
+  <body>
+    <!-- placed my nav ontop -->
+    <nav>
+      <a href="#academic">Academic History</a>
+      <a href="#career">Career Summary</a>
+      <a href="#skills">Professional Skills</a>
+      <a href="#contacts">Contacts</a>
+      <a href="#github">Github</a>
+    </nav>
+    <header>
+      <!-- Devided my header into divs to control it better -->
+      <div class="name">
+      <div>
+          <h1>Kutlwano Josi</h1><hr>
+            <h1>Software Developer</h1>
+        </div>
+        <div class="intro"></div>
+          <p>
+            I am a young dedicated and confident individual who is currently
+            looking<br/>
+            for a company that requires team work as I am a team player, a fast<br/>
+            learner and a hard worker who works well under pressure. I dislike
+            being<br/>
+            unchallenged by work, I thrive in a challenging environment and I would<br/>
+            like to be part of a well established organization.
+          </p>
+        </div>
+        <div class="profile">
+          <picture>
+            <source srcset="images/kutlwano3.png" media="(max-width: 600px)">
+            <source srcset="images/kutlwano2.png" media="(max-width: 850px)">
+            <source srcset="images/kutlwano.png" media="(max-width: 1000px)">
+            <img src="images/kutlwano.png" alt="kutlwano" width="300px" height="300px"/>
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <section class="containter">
+      <div class="box-1">
+        <h2 id="academic">Academic History</h2>
+        <h3>Grade 12</h3>
+        <h4>Milner High School</h4>
+        <ul>
+          <li>Afrikaans First Additional Language</li>
+          <li>English Home Language</li>
+          <li>Life Orientation</li>
+          <li>Computer Application Technology</li>
+          <li>Life Sciences</li>
+          <li>Mathematics</li>
+        </ul>
+      </div>
+
+      <div class="box-2">
+        <h2 id="career">Career Summary</h2>
+        <h3>Call Center Agent</h3>
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Call Clients</li>
+          <li>Customer Retention</li>
+          <li>Reporting to Sales Manager</li>
+          <li>Generating Leads</li>
+          <li>Prospecting</li>
+          <li>Closing Deals</li>
+        </ul>
+        <h3>Bolt Driver</h3>
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Transport clients to desired destination</li>
+          <li>Customer Service</li>
+        </ul>
+      </div>
+
+      <div class="box-3">
+        <h2 id="skills">Professional Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Microsoft Office</li>
+          <li>Communication Skills</li>
+          <li>Good Typing Skills</li>
+          <li>Telephone Etiquette</li>
+          <li>Costumer Care Services</li>
+          <li>Inbound and Outbound Management</li>
+          <li>Handling Objections</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div id="contacts">
+        <ul class="communication">
+          <li> <i class="fa-solid fa-envelope"></i><a href="mailto:kutlwanojosi01@gmail.com"> kutlwanojosi01@gmail.com</a></li>
+          <li><i class="fa-brands fa-facebook"></i><a target="_blank" href="https://www.facebook.com/kutlwano.josi/"> Facebook</a></li>
+          <li><i class="fa-brands fa-linkedin"></i><a target="_blank" href="https://www.linkedin.com/in/kutlwano-josi-7aa128151/"> Linkedin</a></li>
+          <li><i class="fa-brands fa-github"></i><a target="_blank" href="https://github.com/KutlwanoJosi"> Github</a></li>
+        </ul>
+      </div>
+
+      <form id="form" action="https://formsubmit.co/kutlwanojosi01@gmail.com" method="POST">
+        <div>
+          <label for="name">Full Name:</label>
+          <input type="name" name="name" id="name" placeholder="e.g Kutlwano Josi" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email Here" required/>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="recruiter">Recruiter</label>
+          <input type="radio" id="recruiter" name="title" required />
+
+          <label for="project collaboration">Project Collaboration</label>
+          <inputtype="radio" id="project collaboration" name="title" required/>
+
+          <label for="employer">Employer</label>
+          <input type="radio" id="employer" name="title" required />
+        </div>
+
+        <br/>
+
+        <div>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter Message Here(Optional)"
+          ></textarea>
+        </div>
+        
+        <div>
+        <button type="reset" value="reset">Reset</button>
+        </div>
+
+        <br />
+        
+        <div>
+        <button type="submit" value="submit">Submit</button>
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
