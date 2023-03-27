@@ -1,27 +1,28 @@
-
-img{ 
+img {
     border-radius: 50px;
-    background-color:lightblue;
+    background-color: lightblue;
     padding-top: 20px;
 }
-.profile{
+
+.profile {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
-h1{
+h1 {
     font-size: 60px;
 }
 
-body{
-    background-image: url(../images/background.jpg); 
+/* Used background-image as my background for my web */
+body {
+    background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: azure; 
+    color: azure;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -31,23 +32,24 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    
+
 }
 
-a{
+/* removed the line below the links by adding "text-decoration */
+a {
     color: azure;
     text-decoration: none;
 }
 
 /* animated my links using the "hover" element */
-a:hover{
-color: darkorange;
-font-size: larger;
+a:hover {
+    color: darkorange;
+    font-size: larger;
 
 }
 
 /* created a footer style with the links to all my communication channels */
-.communication{
+.communication {
     position: relative;
     bottom: 0%;
     list-style-type: none;
@@ -57,30 +59,30 @@ font-size: larger;
 }
 
 /* created box items for my grid display */
-.box-1{
-    border-color: rgb(213, 253, 119);
+.box-1 {
     border: solid 2px;
     border-radius: 15px;
     padding-left: 25px;
+    
 }
 
-.box-2{
- 
+/* Used a grid-row "short-hand" property */
+.box-2 {
     border: solid 2px;
     border-radius: 15px;
     padding-left: 25px;
     grid-row: 1/3;
 }
 
-.box-3{
+.box-3 {
     border: solid 2px;
     border-radius: 15px;
     padding-left: 25px;
 }
 
 /* my navigation bar to help viewers to access content easily */
-nav{
-    background-color:rgb(25, 54, 107);
+nav {
+    background-color: rgb(25, 54, 107);
     border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -90,7 +92,7 @@ nav{
     position: fixed;
 }
 
-footer{
+footer {
     border: solid;
     color: black;
     border-radius: 15px;
@@ -99,52 +101,55 @@ footer{
     padding-bottom: 20px;
 }
 
+/* Mobile Phone Resposnive Size */
 @media screen and (max-width: 600px) {
-    .container{
-        display:contents;
+    .container {
+        display: contents;
         justify-content: center;
     }
 
-    nav{
-        display: none;
-    
-    }
-
-    img{
+    img {
         width: 150px;
         height: 150px;
-        
     }
-    body{
+
+    body {
         font-size: small;
     }
 
-    h1{
+    h1 {
         font-size: 30px;
+    }
+
+    /* Debugged by adding this tag so that my links at the bottom become smaller */
+    .communication {
+        font-size: small;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 850px){
-    .container{
-    display: contents;
-    }
-
-    .container{
+/* Tablet size  */
+@media screen and (min-width: 601px) and (max-width: 850px) {
+    .container {
         display: contents;
     }
 
-    body{
+    body {
         font-size: medium;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
     }
 
-    img{
+    img {
         width: 200px;
         height: 200px;
         padding-top: 20px;
     }
 
- }
+    /* Debugged by adding this tag so that my links at the bottom become smaller */
+    .communication {
+        font-size: medium;
+    }
 
+}
