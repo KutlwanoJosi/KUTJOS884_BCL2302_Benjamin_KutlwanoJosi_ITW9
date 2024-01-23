@@ -1,155 +1,189 @@
 img {
-    border-radius: 50px;
-    background-color: lightblue;
-    padding-top: 20px;
+  border-radius: 50px;
+  background-color: lightblue;
+  padding-top: 20px;
+}
+
+.name {
+  text-align: center;
+}
+
+.intro {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .profile {
-    padding-top: 20px;
-    padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 /* Used background-image as my background for my web */
 body {
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: azure;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
 }
 
 header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Add an overlay */
+  padding: 20px;
+  border-radius: 15px;
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 /* removed the line below the links by adding "text-decoration */
 a {
-    color: azure;
-    text-decoration: none;
+  color: azure;
+  text-decoration: none;
 }
 
 /* animated my links using the "hover" element */
 a:hover {
-    color: darkorange;
-    font-size: larger;
-
+  color: darkorange;
+  font-size: larger;
 }
 
 /* created a footer style with the links to all my communication channels */
 .communication {
-    position: relative;
-    bottom: 0%;
-    list-style-type: none;
-    justify-content: space-evenly;
-    display: flex;
-    font-size: x-large;
+  position: relative;
+  bottom: 0%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  display: flex;
+  font-size: x-large;
 }
 
 /* created box items for my grid display */
 .box-1 {
-    border: solid 2px;
-    border-radius: 15px;
-    padding-left: 25px;
-    
+  border: solid 2px;
+  border-radius: 15px;
+  padding-left: 25px;
 }
 
 /* Used a grid-row "short-hand" property */
 .box-2 {
-    border: solid 2px;
-    border-radius: 15px;
-    padding-left: 25px;
-    grid-row: 1/3;
+  border: solid 2px;
+  border-radius: 15px;
+  padding-left: 25px;
+  grid-row: 1/3;
 }
 
 .box-3 {
-    border: solid 2px;
-    border-radius: 15px;
-    padding-left: 25px;
+  border: solid 2px;
+  border-radius: 15px;
+  padding-left: 25px;
 }
 
 /* my navigation bar to help viewers to access content easily */
 nav {
-    background-color: rgb(25, 54, 107);
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    width: 100%;
-    top: 0%;
-    position: fixed;
+  background-color: #19366b;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 100%;
+  top: 0%;
+  position: fixed;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    border: solid;
-    color: black;
-    border-radius: 15px;
-    background-color: gray;
-    padding-left: 20px;
-    padding-bottom: 20px;
+  border: solid 2px;
+  color: black;
+  border-radius: 15px;
+  background-color: #535353;
+  padding: 20px;
+  margin-top: 20px;
 }
+
+/* Style for form buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style for the reset button */
+button[type="reset"] {
+    background-color: #e74c3c; /* Red color for reset button */
+    color: white;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #27ae60; /* Green color for submit button */
+    color: white;
+}
+
 
 /* Mobile Phone Resposnive Size */
 @media screen and (max-width: 600px) {
-    .container {
-        display: contents;
-        justify-content: center;
-    }
+  .container {
+    display: contents;
+    justify-content: center;
+  }
 
-    img {
-        width: 150px;
-        height: 150px;
-    }
+  img {
+    width: 150px;
+    height: 150px;
+  }
 
-    body {
-        font-size: small;
-    }
+  body {
+    font-size: small;
+  }
 
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    /* Debugged by adding this tag so that my links at the bottom become smaller */
-    .communication {
-        font-size: small;
-    }
+  /* Debugged by adding this tag so that my links at the bottom become smaller */
+  .communication {
+    font-size: small;
+  }
 }
 
 /* Tablet size  */
 @media screen and (min-width: 601px) and (max-width: 850px) {
-    .container {
-        display: contents;
-    }
+  .container {
+    display: contents;
+  }
 
-    body {
-        font-size: medium;
-    }
+  body {
+    font-size: medium;
+  }
 
-    h1 {
-        font-size: 50px;
-    }
+  h1 {
+    font-size: 50px;
+  }
 
-    img {
-        width: 200px;
-        height: 200px;
-        padding-top: 20px;
-    }
+  img {
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+  }
 
-    /* Debugged by adding this tag so that my links at the bottom become smaller */
-    .communication {
-        font-size: medium;
-    }
-
+  /* Debugged by adding this tag so that my links at the bottom become smaller */
+  .communication {
+    font-size: medium;
+  }
 }
