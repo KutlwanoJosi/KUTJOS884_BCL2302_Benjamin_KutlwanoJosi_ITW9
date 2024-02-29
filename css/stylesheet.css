@@ -53,7 +53,7 @@ a {
 
 /* animated my links using the "hover" element */
 a:hover {
-  color: darkorange;
+  color: rgb(0, 153, 255);
   font-size: larger;
 }
 
