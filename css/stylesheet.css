@@ -1,35 +1,13 @@
-img {
-  border-radius: 150px;
-}
-
-.name {
-  text-align: center;
-}
-
-.intro {
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.profile {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-h1 {
-  font-size: 60px;
-}
-
-/* Used background-image as my background for my web */
+/* General Styles */
 body {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: azure;
 }
 
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-evenly;
@@ -39,56 +17,7 @@ header {
   border-radius: 15px;
 }
 
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-/* removed the line below the links by adding "text-decoration */
-a {
-  color: azure;
-  text-decoration: none;
-}
-
-/* animated my links using the "hover" element */
-a:hover {
-  color: rgb(0, 153, 255);
-  font-size: larger;
-}
-
-/* created a footer style with the links to all my communication channels */
-.communication {
-  position: relative;
-  bottom: 0%;
-  list-style-type: none;
-  justify-content: space-evenly;
-  display: flex;
-  font-size: x-large;
-}
-
-/* created box items for my grid display */
-.box-1 {
-  border: solid 1px;
-  border-radius: 15px;
-  padding-left: 25px;
-}
-
-/* Used a grid-row "short-hand" property */
-.box-2 {
-  border: solid 1px;
-  border-radius: 15px;
-  padding-left: 25px;
-  grid-row: 1/3;
-}
-
-.box-3 {
-  border: solid 1px;
-  border-radius: 15px;
-  padding-left: 25px;
-}
-
-/* my navigation bar to help viewers to access content easily */
+/* Navigation Styles */
 nav {
   background-color: #19366b;
   border-radius: 15px;
@@ -102,6 +31,7 @@ nav {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer Styles */
 footer {
   border: solid 1px;
   color: white;
@@ -111,45 +41,50 @@ footer {
   margin-top: 20px;
 }
 
-/* Style for form buttons */
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
+/* Link Styles */
+a {
+  color: azure;
+  text-decoration: none;
 }
 
-/* Style for the reset button */
-button[type="reset"] {
-    background-color: #dd2f1c; /* Red color for reset button */
-    color: white;
+a:hover {
+  color: rgb(0, 153, 255);
 }
 
-/* Style for the submit button */
-button[type="submit"] {
-    background-color: #0eaf51; /* Green color for submit button */
-    color: white;
-}
-  
-button[type="reset"]:hover{
-  background-color: red /* Added a hover color */
-}
-
-button[type="submit"]:hover{
-  background-color: green /* Added a hover color */
+/* Communication Links Styles */
+.communication {
+  position: relative;
+  bottom: 0%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  display: flex;
+  font-size: x-large;
 }
 
+/* Grid Layout Styles */
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
 
+/* Box Styles */
+.box {
+  border: solid 1px;
+  border-radius: 15px;
+  padding-left: 25px;
+}
 
-/* Mobile Phone Resposnive Size */
+.box-1, .box-3 {
+  grid-row: span 1;
+}
+
+.box-2 {
+  grid-row: span 2;
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 600px) {
-  .container {
-    display: contents;
-    justify-content: center;
-  }
-
   img {
     width: 150px;
     height: 150px;
@@ -163,16 +98,16 @@ button[type="submit"]:hover{
     font-size: 30px;
   }
 
-  /* Debugged by adding this tag so that my links at the bottom become smaller */
   .communication {
     font-size: small;
   }
 }
 
-/* Tablet size  */
 @media screen and (min-width: 601px) and (max-width: 850px) {
-  .container {
-    display: contents;
+  img {
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
   }
 
   body {
@@ -183,14 +118,35 @@ button[type="submit"]:hover{
     font-size: 50px;
   }
 
-  img {
-    width: 200px;
-    height: 200px;
-    padding-top: 20px;
-  }
-
-  /* Debugged by adding this tag so that my links at the bottom become smaller */
   .communication {
     font-size: medium;
   }
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="reset"] {
+  background-color: #dd2f1c;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #0eaf51;
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: red;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
 }
